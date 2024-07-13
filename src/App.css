@@ -2,217 +2,77 @@ body{
   margin: 0;
 }
 
-.navbar img{
-  width: 200px;
-  height: 80px;
+.reserve .page-name{
+   text-align: center;
+   background-color: #495e57;
+   color: white;
+   font-size: 42px;
+   padding: 32px;
 }
-.navbar {
+
+.reserve form{
   display: flex;
-  position: relative;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 10px; 
-}
-.navbar-links {
-  height: 100%;
-}
-
-.navbar-links ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-links li {
-  list-style: none;
-}
-
-.navbar-links li a {
-  display: block;
-  text-decoration: none;
-  padding: 1rem;
-  color: black;
-  font-size: 26px;
-}
-
-.toggle-button {
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
-  display: none;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
   width: 100%;
-  background-color: black;
-  border-radius: 10px;
+  gap: 32px;
+  margin-top: 50px;
 }
 
-.header{
-  background-color: #495e57;
-  margin-top: 20px;
+.reserve form input, select{
+  width: 300px;
+  height: 30px;
+}
+
+.reserve form label{
+  font-weight: 700;
+  color: #495e57;
+  text-align: left;
+}
+
+.not-found{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 45vh;
+  justify-content: center;
 }
 
-.header div h1{
-  color: #fece14;
+.not-found h2{
+  font-size: 60px;
+  color: #495e57;
+  text-align: center;
+}
+
+.reserve form button{
+  border: none;
+  border-radius: 24px;
+  background-color: #fece14;
+  width: 300px;
+  padding: 12px 20px;
+  color: #495e57;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.reserve form button:hover{
+  background-color: #495e57;
+  color: white;
+}
+
+.reservemade{
+  color: #495e57;
+  text-align: center;
+  margin-top: 100px;
+}
+.reservemade h2{
   font-size: 50px;
 }
-.header div p{
-  color: white;
+.reservemade p{
   font-size: 20px;
 }
 
-.header div p:first-of-type{
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.header div button{
-  background: #fece14;
-  padding: 12px;
-  border-radius: 5px;
-  border: none;
-}
-
-.header div button a{
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-
-.header img{
-  width: 400px;
-  height: 400px;
-  position: relative;
-  top: 35%;
-  border-radius: 20px;
-}
-
-.week-special .week-special-details{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding-inline: 110px;
-}
-
-.week-special .week-special-details h2{
-  font-size: 50px;
-}
-
-.week-special .week-special-details button{
-  background: #fece14;
-  border: none;
-  padding: 12px;
-  border: none;
-  border-radius: 12px;
-}
-
-.cards{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  row-gap: 12px;
-}
-
-.card{
-  width: 300px;
-  height: 450px;
-  border-radius: 12px;
-  background: #739a8d;
-}
-
-.card-price-name{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card-details{
-  padding-inline: 12px;
-}
-
-.card-details button{
-  background: #fece14;
-  border: none;
-  border-radius: 6px;
-  padding: 12px;
-}
-
-.card img{
-   border-radius: 12px;
-   width: 100%;
-}
-
-.reserve{
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
-  border: 2px solid black;
-  height: 50vh;
-  width: 70vw;
-}
-
 @media (max-width: 800px) {
-  .navbar img{
-    width: 200px;
-    height: 60px;
-  }
 
-  .navbar-links li a{
-    font-size: 20px;
-  }
-
-  .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .toggle-button {
-      display: flex;
-  }
-
-  .navbar-links {
-      display: none;
-      width: 100%;
-  }
-
-  .navbar-links ul {
-      width: 100%;
-      flex-direction: column;
-  }
-
-  .navbar-links ul li {
-      text-align: center;
-  }
-
-  .navbar-links ul li a {
-      padding: .5rem 1rem;
-  }
-
-  .navbar-links.active {
-      display: flex;
-  }
-
-  .header{
-    flex-direction: column;
-    padding-inline: 20px;
-    height: 70vh;
-  }
-  .header img{
-    top: 5%;
-  }
-  .cards{
-    flex-direction: column;
-  }
 }
